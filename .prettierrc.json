@@ -1,0 +1,11 @@
+{
+  "extends": "prettier-config-standard",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ]
+}

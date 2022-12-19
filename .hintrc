@@ -1,0 +1,26 @@
+{
+  "connector": {
+    "name": "chrome"
+  },
+  "formatters": ["html"],
+  "hints": {
+    "accessibility": "error",
+    "compat-api": "warning",
+    "content-type": "warning",
+    "css-unused-selector": "warning",
+    "html-has-lang": "error",
+    "html-lang-valid": "error",
+    "http-compression": "warning",
+    "http-headers": "warning",
+    "http-status-codes": "warning",
+    "image-alt": "error",
+    "no-vulnerable-libraries": "warning",
+    "performance": "warning",
+    "viewport": "error"
+  },
+  "ignore": ["**/node_modules/**"],
+  "output": {
+    "console": true,
+    "file": false
+  }
+}
