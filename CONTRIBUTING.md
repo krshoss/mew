@@ -14,11 +14,11 @@ Bugs are tracked as github [issues](../../../issues). After you've determined wh
 
 Explain the problem and include additional details to help maintainers reproduce the problem:
 
-* **Use a clear and descriptive title** for the issue to identify the problem.
-* **Describe the exact steps which reproduce the problem** in as many details as possible.
-* **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
-* **Explain which behavior you expected to see instead and why.**
-* **Include screenshots or animated GIFs** which show you following the described steps and clearly demonstrate the problem. If you use the keyboard while following the steps, use [this tool](https://www.cockos.com/licecap/) to record GIFs on macOS and Windows, and [this tool](https://github.com/colinkeenan/silentcast) or [this tool](https://github.com/GNOME/byzanz) on Linux.
+- **Use a clear and descriptive title** for the issue to identify the problem.
+- **Describe the exact steps which reproduce the problem** in as many details as possible.
+- **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
+- **Explain which behavior you expected to see instead and why.**
+- **Include screenshots or animated GIFs** which show you following the described steps and clearly demonstrate the problem. If you use the keyboard while following the steps, use [this tool](https://www.cockos.com/licecap/) to record GIFs on macOS and Windows, and [this tool](https://github.com/colinkeenan/silentcast) or [this tool](https://github.com/GNOME/byzanz) on Linux.
 
 ## Cloning the project & creating PR
 
@@ -42,13 +42,13 @@ Kindly give your branch a more descriptive name like `docs-contributing-guide-2`
 
 You could follow this convention. Some ideas to get you started:
 
-* Feature Updates: `feat-<brief 5-10 words-Description>-<ISSUE_NO>`
+- Feature Updates: `feat-<brief 5-10 words-Description>-<ISSUE_NO>`
 
-* Bug Fixes: `fix-<brief 5-10 words-Description>-<ISSUE_NO>`
+- Bug Fixes: `fix-<brief 5-10 words-Description>-<ISSUE_NO>`
 
-* Documentation: `docs-<brief 5-10 words-Description>-<ISSUE_NO>`
+- Documentation: `docs-<brief 5-10 words-Description>-<ISSUE_NO>`
 
-* And so on...
+- And so on...
 
 ```bash
 git checkout -b your-branch-name
