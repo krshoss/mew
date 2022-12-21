@@ -1,0 +1,43 @@
+{
+  "name": "@mew/logger",
+  "version": "0.0.0",
+  "description": "Logging for Node.js ✍️  with a opinionated theme 🎨  and configurable API  🍭",
+  "main": "lib/dist/index.js",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krshkun/mew.git#packages"
+  },
+  "keywords": [
+    "logging",
+    "logger",
+    "logs",
+    "log"
+  ],
+  "author": "Krish Gupta <krshkun@proton.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krshkun/mew/issues"
+  },
+  "homepage": "https://github.com/krshkun/mew/tree/packages/logger#readme",
+  "scripts": {
+    "pretest": "yarn build && cd __tests__ && tsc && cd ..",
+    "test": "jest",
+    "build": "cd lib && tsc && cd .."
+  },
+  "types": "lib/types/index.d.ts",
+  "dependencies": {
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {},
+  "directories": {
+    "lib": "lib/dist",
+    "test": "__tests__/dist"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

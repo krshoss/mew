@@ -1,7 +1,7 @@
 // @ts-check
 
 /**
- * @type {import('eslint').Linter.Config}
+ * @type {import('eslint').ESLint.ConfigData}
  */
 module.exports = {
   env: {
@@ -18,9 +18,22 @@ module.exports = {
   ],
   overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest'
+    ecmaVersion: 'latest',
+    project: './tsconfig.base.json'
   },
-  rules: {},
+  rules: {
+    '@typescript-eslint/space-before-function-paren': 'off',
+    '@typescript-eslint/prefer-nullish-coalescing': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/member-delimiter-style': 'off'
+  },
   root: true,
-  ignorePatterns: ['**/node_modules/**', '**/dist/**', '**/tmp/**', '**/out-tsc/**', '!.*']
+  ignorePatterns: [
+    '**/node_modules/**',
+    '**/dist/**',
+    '**/tmp/**',
+    '**/out-tsc/**',
+    '*.d.ts',
+    '!.*'
+  ]
 }

@@ -17,10 +17,5 @@
     "no-vulnerable-libraries": "warning",
     "performance": "warning",
     "viewport": "error"
-  },
-  "ignore": ["**/node_modules/**"],
-  "output": {
-    "console": true,
-    "file": false
   }
 }

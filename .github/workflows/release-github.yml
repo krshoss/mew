@@ -19,4 +19,4 @@ jobs:
       - run: yarn install
       - run: yarn bump
       - run: yarn changelog
-      - run: yarn release
+      - run: yarn release --ci

@@ -35,5 +35,6 @@
   ],
   "fail": [
     ["@semantic-release/github", { "assets": "packages/*/CHANGELOG.md" }]
-  ]
+  ],
+  "branches": [{ "name": "main" }]
 }
