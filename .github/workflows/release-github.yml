@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18.x
-      - run: yarn install
+      - run: yarn install --frozen-lockfile
       - run: yarn bump
       - run: yarn changelog
       - run: yarn release --ci
