@@ -1,6 +1,6 @@
 {
   "name": "@mewlab/logger",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Logging for Node.js ✍️  with a opinionated theme 🎨  and configurable API  🍭",
   "main": "lib/dist/index.js",
   "type": "commonjs",
