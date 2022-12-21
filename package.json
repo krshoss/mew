@@ -9,7 +9,8 @@
   "scripts": {
     "build": "nx run-many --target=build",
     "test": "nx run-many --target=test",
-    "release": "nx run-many --target=release"
+    "release": "nx run-many --target=release",
+    "release:ghNpm": "lerna exec --concurrency 1 --stream -- npm publish --registry=https://npm.pkg.github.com --access public"
   },
   "workspaces": [
     "packages/*"
