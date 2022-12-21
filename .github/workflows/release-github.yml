@@ -54,3 +54,6 @@ jobs:
           GIT_AUTHOR_EMAIL: 'krshkun@proton.me'
           GIT_COMMITTER_NAME: 'Krish Gupta'
           GIT_COMMITTER_EMAIL: 'krshkun@proton.me'
+    - run: echo "@mewlab:registry=//npm.pkg.github.com/:_authToken=\${GH_NPM_TOKEN}" >> ~/.npmrc
+    - run: npm publish --registry=https://npm.pkg.github.com
+    - run: rm ~/.npmrc
