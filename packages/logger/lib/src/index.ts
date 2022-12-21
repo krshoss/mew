@@ -51,3 +51,8 @@ export function createLogger(config?: MewLoggerConfig): MewLogger {
     return new MewLogger(resolveConfig())
   }
 }
+
+export default createLogger
+
+export * as util from './util'
+export * as types from './types'

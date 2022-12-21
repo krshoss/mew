@@ -21,9 +21,13 @@
   },
   "homepage": "https://github.com/krshkun/mew/tree/packages/logger#readme",
   "scripts": {
-    "pretest": "yarn build && cd __tests__ && tsc && cd ..",
+    "prebuild": "rimraf lib/dist && rimraf lib/types",
+    "build": "tsc -p lib/tsconfig.json",
+    "pretest": "yarn test:build",
+    "pretest:build": "yarn build && rimraf __tests__/dist",
     "test": "jest",
-    "build": "cd lib && tsc && cd .."
+    "test:build": "tsc -p __tests__/tsconfig.json",
+    "release": "semantic-release"
   },
   "types": "lib/types/index.d.ts",
   "dependencies": {

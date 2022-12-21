@@ -1,7 +1,9 @@
 import { describe, it, expect } from '@jest/globals'
-import { getConfig } from '../../lib/dist/util'
+import { util } from '../..'
 
 // Todo: Add tests for the transformConfig in util.ts
+
+const { getConfig } = util
 
 describe('getConfig', () => {
   it('should return the default config if no config file is found', async () => {
