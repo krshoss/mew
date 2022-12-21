@@ -12,17 +12,7 @@ module.exports = {
     ],
     '@semantic-release/release-notes-generator',
     '@semantic-release/changelog',
-    ['@semantic-release/npm', { npm_token: '${{ secrets.NPM_TOKEN }}' }],
-    [
-      'semantic-release-npm-deprecate-old-versions',
-      {
-        rules: [
-          'supportLatest',
-          'supportPreReleaseIfNotReleased',
-          'deprecateAll'
-        ]
-      }
-    ],
+    '@semantic-release/npm',
     [
       '@semantic-release/git',
       {
@@ -33,8 +23,7 @@ module.exports = {
     [
       '@semantic-release/github',
       {
-        assets: ['CHANGELOG.md', 'lib/dist/**'],
-        gh_token: '${{ secrets.GH_TOKEN }}'
+        assets: ['CHANGELOG.md', 'lib/dist/**']
       }
     ]
   ],

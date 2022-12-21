@@ -1,12 +1,12 @@
 {
-  "name": "@mew/logger",
+  "name": "@mewlab/logger",
   "version": "0.0.0",
   "description": "Logging for Node.js ✍️  with a opinionated theme 🎨  and configurable API  🍭",
   "main": "lib/dist/index.js",
   "type": "commonjs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/krshkun/mew.git#packages"
+    "url": "git+https://github.com/krshkun/mew.git"
   },
   "keywords": [
     "logging",
@@ -23,10 +23,9 @@
   "scripts": {
     "prebuild": "rimraf lib/dist && rimraf lib/types",
     "build": "tsc -p lib/tsconfig.json",
-    "pretest": "yarn test:build",
-    "pretest:build": "yarn build && rimraf __tests__/dist",
+    "pretest:build": "yarn build",
+    "pretest": "rimraf __tests__/dist && tsc -p __tests__/tsconfig.json",
     "test": "jest",
-    "test:build": "tsc -p __tests__/tsconfig.json",
     "release": "semantic-release"
   },
   "types": "lib/types/index.d.ts",

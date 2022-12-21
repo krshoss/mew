@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@amanda-mitchell/semantic-release-npm-multiple@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@amanda-mitchell/semantic-release-npm-multiple/-/semantic-release-npm-multiple-3.5.0.tgz#f9e9e7c016e2c375062aa62d30db090daa0cebcb"
+  integrity sha512-Epqmf01BCmilaWZYkiDVOzEh8DfRY/7A1KVAR+rdbP3Qpqqm7bzapgPzXWdXJ6jlXfOSn3R/0Sfo/Yf8knW8pA==
+  dependencies:
+    "@semantic-release/npm" "^9.0.0"
+    require-reload "^0.2.2"
+
 "@ampproject/remapping@^2.1.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.2.0.tgz#56c133824780de3174aed5ab6834f3026790154d"
@@ -9714,6 +9722,11 @@ require-from-string@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz"
   integrity sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
+
+require-reload@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/require-reload/-/require-reload-0.2.2.tgz#29a7591846caf91b6e8a3cda991683f95f8d7d42"
+  integrity sha512-ElZsgUSIyQKuS8Db4t/w30ut7TXWPzEhvBEVWzMHMTHeokHABEiF+oABX/rSp9nEhm+loT/ziZC+/7PQn7+7eA==
 
 requires-port@^1.0.0:
   version "1.0.0"

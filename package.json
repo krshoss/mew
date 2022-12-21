@@ -9,7 +9,6 @@
   "scripts": {
     "build": "nx run-many --target=build",
     "test": "nx run-many --target=test",
-    "prerelease": "yarn test",
     "release": "nx run-many --target=release"
   },
   "workspaces": [
