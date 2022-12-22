@@ -1,0 +1,39 @@
+{
+  "name": "@mewlab/css-reset",
+  "version": "0.0.0",
+  "description": "Futuristic Opinionated CSS Reset",
+  "main": "index.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krshkun/mew.git"
+  },
+  "keywords": [
+    "css",
+    "reset",
+    "normalize"
+  ],
+  "author": "Krish Gupta <krshkun@proton.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krshkun/mew/issues"
+  },
+  "homepage": "https://github.com/krshkun/mew/tree/packages/css-reset#readme",
+  "scripts": {
+    "prebuild": "rimraf ./lib/dist/reset.css && rimraf ./index.css",
+    "build": "yarn postcss ./lib/src/reset.pcss -o ./lib/dist/reset.css",
+    "postbuild": "cp ./lib/dist/reset.css ./index.css",
+    "release": "semantic-release"
+  },
+  "types": "lib/types/index.d.ts",
+  "dependencies": {
+    "reseter.css": "^2.0.0"
+  },
+  "devDependencies": {},
+  "directories": {},
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

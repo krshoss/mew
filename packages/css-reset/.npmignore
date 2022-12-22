@@ -1,0 +1,8 @@
+src/
+.github/
+__tests__
+
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+tsconfig.json

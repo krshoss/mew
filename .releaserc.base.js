@@ -25,6 +25,13 @@ module.exports = {
       {
         assets: ['CHANGELOG.md', 'lib/dist/**']
       }
+    ],
+    [
+      '@semantic-release/exec',
+      {
+        publishCmd:
+          'echo "@mewlab:registry=//npm.pkg.github.com:_authToken=${GH_NPM_TOKEN}" >> ~/.npmrc && yarn release:ghNpm && rm ~/.npmrc'
+      }
     ]
   ],
   preset: 'angular',
